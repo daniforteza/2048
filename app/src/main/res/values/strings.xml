@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">2048</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contenedor_instrucciones">ContenedorInstruccionesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_instruccion_final">Y listo, ahora puedes empezar a jugar, presiona iniciar y prueba el juego!!!</string>
+    <string name="texto_instrucciones_informacion">Este juego forma parte de un proyecto realizado por Dani Forteza para la asignatura de "PROGRAMACION MÓVIL" en el curso de DAM del instituto FBMOLL</string>
+    <string name="texto_instruccion_user">El nickName es fundamental si quieres guardar tus partidas, ya qué este nos permitirá saber qué usuario ha jugado y cual es su posición en el ranking, presiona esta opción si quieres ingresar un nuevo jugador.</string>
+    <string name="texto_instrucciones_instrucciones">¿Aún no te queda claro como funciona la aplicación? No te preocupes, desde aquí podrás regresar a consultar las instrucciones del juego.</string>
+    <string name="texto_instrucciones_ranking">Consulta el ranking de puntos obtenidos en cada partida, a medida que vayas jugando mejorarás tú puntaje.</string>
+    <string name="texto_instrucciones_ajustes">Ajusta el modo de juego .</string>
+    <string name="texto_instrucciones_play">Cuando usted hace 2 baldosas con el mismo número en el interior se unen, se funden en uno nuevo con un número que es la adición de la 2 anterior : 2 +2 = 4, 4 +4 = 8, 1024 ... 1024 = 2048 ! Para mover las fichas en la parrilla, sólo tienes que elegir una dirección (arriba, derecha, abajo o izquierda) .</string>
+    <string name="texto_instrucciones_introduccion">Cuando usted hace 2 baldosas con el mismo número en el interior se unen, se funden en uno nuevo con un número que es la adición de la 2 anterior : 2 +2 = 4, 4 +4 = 8, 1024 ... 1024 = 2048 ! Para mover las fichas en la parrilla, sólo tienes que elegir una dirección (arriba, derecha, abajo o izquierda) .</string>
+    <string name="title_activity_ajustes_tema">AjustesTemaActivity</string>
+    <string name="info_acerca_de">Esta aplicación pertenece a Dani Forteza y forma parte de un proyecto  realizado para la asignatura de Mobile And Interfaces en el instituto Ies Francesc de BorjaMoll</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="new_game">New Game</string>
+    <string name="put_your_name">Put your name :</string>
+    <string name="dialog_msg">Another try?</string>
+    <string name="slogan">Join the number to get the 2048 tile!</string>
+    <string name="time">Time :</string>
+</resources>
+
+

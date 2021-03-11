@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ece8e4">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/score_to_search"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:autofillHints=""
+            android:text="NombreJugador"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/search_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorAzul"
+            android:text="Search by user"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/order_by_name"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Sort by Name"
+            android:backgroundTint="@color/colorAzul"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/order_by_score"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorAzul"
+            android:text="Sort by Score"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/order_by_time"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Sort by Time"
+            android:backgroundTint="@color/colorAzul"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ece8e4" />
+
+
+</LinearLayout>

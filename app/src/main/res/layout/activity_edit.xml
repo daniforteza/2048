@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAzul"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="PUNTUACIONES"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/editScore"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/title"
+        android:text="Score:"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editScoreCamp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/editScore"
+        android:layout_below="@+id/title"
+        android:text="666"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/editName"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editScoreCamp"
+        android:text="Username:"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/editNameCamp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/editScore"
+        android:layout_below="@+id/editScoreCamp"
+        android:text="Dani El Loco"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/editDuration"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editName"
+        android:text="Duration:"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editDurationCamp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/editDuration"
+        android:layout_below="@+id/editName"
+        android:text="666.666"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDuration"
+        android:text="GUARDAR INFORMACION"
+        android:onClick="onButtonClick"
+        />
+
+
+</RelativeLayout>

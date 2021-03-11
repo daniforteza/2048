@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAzul"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+
+
+        <TextView
+            android:id="@+id/scoregame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="PUNTUACIONES: "
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/scorecamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="2124 "
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoregame"
+            android:textColor="@color/white"
+            android:text="TIEMPO TOTAL: "
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/timecamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_below="@+id/scorecamp"
+            android:text="24:00:12  "
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:textColor="@color/white"
+            android:text="USERNAME: "
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/usernamecampp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_below="@+id/timecamp"
+            android:text="Corti "
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:textColor="@color/white"
+            android:text="ID :"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/idcamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamecampp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="0dp"
+
+            android:text="1 "
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <ImageButton
+            android:id="@+id/editbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="240dp"
+            android:background="@drawable/editbutton"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

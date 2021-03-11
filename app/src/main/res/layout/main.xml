@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main_linearLayout"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ece8e4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="2048 GAME"
+            android:textColor="#787266"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/usernamegame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username: DaniForteza"
+            android:layout_toRightOf="@id/strut" />
+
+        <TextView
+            android:id="@+id/bestscoregame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BestScore: 435"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/strut"
+            android:layout_below="@+id/main_title"/>
+
+        <TextView
+            android:id="@+id/scoregame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/strut"
+            android:layout_below="@+id/main_title"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+        <TextView
+                android:id="@+id/main_text"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:text="@string/slogan"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#787266"
+                android:maxLines="2"
+                android:layout_weight="0.6"
+                />
+
+        <Button
+            android:id="@+id/main_button_new_game"
+            android:backgroundTint="#B3937E"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClick"
+            android:text="@string/new_game"
+
+            android:textColor="#787266"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_button_undo"
+            android:backgroundTint="#B3937E"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:text="undo movement"
+            android:textColor="#787266"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <com.example.a2048.Game.MatrixView
+        android:id="@+id/matrix_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#787266"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#787266"
+           />
+
+     </LinearLayout>
+
+</LinearLayout>
+

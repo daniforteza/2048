@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.AcercaDeActivity">
+
+    <RelativeLayout
+        android:id="@+id/idLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_redondo"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="-40dp">
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/logocortiv1" />
+
+    <TextView
+        android:id="@+id/textNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="{Usuario}"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idLayoutFondo"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idLayoutFondo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Acerca De"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultados"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="@string/info_acerca_de"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/icoYoutube"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/youtube" />
+
+            <ImageButton
+                android:id="@+id/icoFace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/icoInstagram"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/instagram" />
+
+            <ImageButton
+                android:id="@+id/icoTwitter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/twitter" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
